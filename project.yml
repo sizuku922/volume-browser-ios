@@ -18,6 +18,7 @@ targets:
       base:
         PRODUCT_BUNDLE_IDENTIFIER: com.sizuku922.volumebrowser
         PRODUCT_NAME: VolumeBrowser
+        GENERATE_INFOPLIST_FILE: YES
         INFOPLIST_KEY_CFBundleDisplayName: Volume Browser
         INFOPLIST_KEY_NSAppTransportSecurity_NSAllowsArbitraryLoads: true
     scheme:
