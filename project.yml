@@ -1,0 +1,24 @@
+name: VolumeBrowser
+options:
+  bundleIdPrefix: com.sizuku922
+  deploymentTarget:
+    iOS: "16.0"
+  createIntermediateGroups: true
+settings:
+  base:
+    SWIFT_VERSION: "5.0"
+    TARGETED_DEVICE_FAMILY: "1,2"
+targets:
+  VolumeBrowser:
+    type: application
+    platform: iOS
+    sources:
+      - path: VolumeBrowser
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.sizuku922.volumebrowser
+        PRODUCT_NAME: VolumeBrowser
+        INFOPLIST_KEY_CFBundleDisplayName: Volume Browser
+        INFOPLIST_KEY_NSAppTransportSecurity_NSAllowsArbitraryLoads: true
+    scheme:
+      testTargets: []
