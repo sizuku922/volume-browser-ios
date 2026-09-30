@@ -191,5 +191,5 @@ struct WebContainer: UIViewRepresentable {
       setInterval(scan, 1500);
       scan();
     })();
-    """
+    """#
 }
