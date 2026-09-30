@@ -60,10 +60,10 @@ struct BrowserView: View {
                                 .font(.subheadline.monospacedDigit().weight(.semibold))
                         }
 
-                        Slider(value: $boost, in: 1...3, step: 0.25)
+                        Slider(value: $boost, in: 1...5, step: 0.25)
 
                         HStack {
-                            ForEach([1.0, 1.25, 1.5, 1.75, 2.0, 2.5, 3.0], id: \.self) { value in
+                            ForEach([1.0, 1.25, 1.5, 1.75, 2.0, 2.5, 3.0, 3.5, 4.0, 4.5, 5.0], id: \.self) { value in
                                 Button("\(Int(value * 100))") {
                                     boost = value
                                 }
@@ -213,7 +213,7 @@ struct WebContainer: UIViewRepresentable {
       }
 
       window.__VB_SET_GAIN = (v) => {
-        gainValue = Math.max(1, Math.min(3, Number(v) || 1));
+        gainValue = Math.max(1, Math.min(5, Number(v) || 1));
         ensureContext();
 
         document.querySelectorAll('audio,video').forEach(el => {
